@@ -8,7 +8,6 @@ The **BookExplorer** app allows users to search for and explore books from a lar
 - **Book Details**: View detailed information about books, including title, author, publication year, cover image, and a brief description.
 - **User Interface**: Built entirely with [Jetpack Compose](https://developer.android.com/jetpack/compose) to deliver a modern and responsive UI.
 - **State Management**: Follows the **MVI** architecture pattern for managing the app's state effectively.
-- **Dark Theme**: Custom dark theme for a more comfortable reading experience in low-light environments.
 - **Sorting Options**: Allows users to sort books by publish date or author name.
 - **Scroll Position Preservation**: Maintains scroll position when navigating between screens, providing a smooth user experience.
 - **Testing**: Comprehensive UI tests using **Jetpack Compose** to ensure app stability and correctness.
