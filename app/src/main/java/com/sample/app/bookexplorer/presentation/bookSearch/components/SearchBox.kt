@@ -45,11 +45,12 @@ fun SearchBox(
     Row(
         verticalAlignment = Alignment.CenterVertically,
         modifier = modifier.fillMaxWidth()
+            .defaultMinSize(minHeight = 65.dp)
+
     ) {
         Box(
             modifier = Modifier
                 .fillMaxWidth(0.86f)
-                .defaultMinSize(minHeight = 65.dp)
                 .padding(
                     horizontal = 16.dp
                 )

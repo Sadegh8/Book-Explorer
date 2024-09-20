@@ -3,6 +3,7 @@ package com.sample.app.bookexplorer.presentation.bookSearch
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.LazyListState
 import androidx.compose.foundation.lazy.items
@@ -19,6 +20,7 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.input.TextFieldValue
 import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import com.sample.app.bookexplorer.R
 import com.sample.app.bookexplorer.domain.model.BookData
@@ -97,7 +99,7 @@ fun BookSearchScreen(
             keyboardController = keyboardController,
             onSortOption = onSortOption,
         )
-        Box(modifier = modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
+        Box(modifier = Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
             when {
                 bookSearchState.isLoading -> {
                     CircularProgressIndicator(modifier = Modifier.testTag("loading_indicator"))
@@ -115,7 +117,9 @@ fun BookSearchScreen(
 
                 else -> {
                     LazyColumn(
-                        modifier = Modifier.fillMaxSize(),
+                        modifier = Modifier
+                            .fillMaxSize()
+                            .padding(top = 4.dp),
                         state = listState,
                     ) {
                         items(bookSearchState.bookList, key = { it.id }) { item ->

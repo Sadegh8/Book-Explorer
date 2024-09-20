@@ -36,7 +36,7 @@ fun BookResponse.toBookData(): List<BookData> {
             id = it.id,
             title = it.title,
             authorName = it.authorName?.firstOrNull() ?: "",
-            firstPublishYear = it.firstPublishYear.toString(),
+            firstPublishYear = it.firstPublishYear?.toString(),
             coverId = it.coverId,
             bookImageSmall = bookImageSmall,
             bookImageLarge = bookImageLarge,
