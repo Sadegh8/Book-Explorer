@@ -2,6 +2,10 @@
 
 The **BookExplorer** app allows users to search for and explore books from a large collection. It provides detailed information about each book, including the author, publish date, and a brief description. The app is designed using modern Android development practices, following the **Model-View-Intent (MVI)** architecture pattern for better separation of concerns and maintainability.
 
+
+https://github.com/user-attachments/assets/e29cec54-68a9-414c-b0b4-7dc906ced730
+
+
 ## Features
 
 - **Book Search**: Users can search for books by title or author name.
